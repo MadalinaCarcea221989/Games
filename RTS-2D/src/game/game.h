@@ -2,7 +2,8 @@
 #define GAME_H
 
 #include <vector>
-#include "../template/precomp.h"
+#include "../../template/precomp.h"
+#include "../../lib/stb_image.h"
 #include "../player/Tank.h"
 #include "../ai/AiTank.h"
 #include "../map/Map.h"

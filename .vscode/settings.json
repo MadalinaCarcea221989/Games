@@ -61,5 +61,8 @@
     "*.py": "python",
     "vector": "cpp"
   },
+  "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};d:\\Programs and apps\\Min-GW\\ucrt64\\bin"
+    },
   "C_Cpp.errorSquiggles": "enabledIfIncludesResolve"
 }
