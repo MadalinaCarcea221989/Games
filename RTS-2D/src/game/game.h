@@ -1,48 +1,61 @@
-#pragma once
+#ifndef GAME_H
+#define GAME_H
 
-namespace Tmpl8
-{
-	class Map;
-	class Tank;
-	class AiTank;
-	class Collision;
-	class Phaser;
-	class BulletCollision;
+#include <vector>
+#include "../template/precomp.h"
+#include "../player/Tank.h"
+#include "../ai/AiTank.h"
+#include "../map/Map.h"
+#include "../collision/Collision.h"
+#include "../weapons/Phaser.h"
+#include "../collision/BulletCollision.h"
+#include "../utils/BoundingBox.h"
+#include "../utils/InputHandler.h"
+
+
+namespace Tmpl8 {
+	
 	class Game : public TheApp
 	{
 	public:
-		// game flow methods
+		Game();  // Constructor
+		~Game(); // Destructor
+
 		void Init();
 		void Update(float deltaTime);
 		void Tick(float deltaTime);
-		void Shutdown() { /* implement if you want to do something on exit */ }
-		// input handling
+		void MouseMove(int x, int y);
+		void MouseDown(int button);
 		void MouseUp(int button);
 
-		void MouseDown(int button);
-		void MouseMove(int x, int y);
-		void MouseWheel(float y) {};
-		void ClickMouse(int x, int y) { clickMouseX = x; clickMouseY = y; }
-		void KeyUp(int key) { /* implement if you want to handle keys */ }
-		void KeyDown(int key) { /* implement if you want to handle keys */ }
-		// data members
-		int2 mousePos, focusStart;
-		bool mouseDown = false;
-		bool tanksAwaitingTarget = false;
-		float zoom = 100;
-		int clickMouseX, clickMouseY;
+	private:
+		void InitializeTanks();
+		void InitializeMap();
+		void InitializeCollisions();
+		void UpdateTanks(float deltaTime);
+		void HandleSelectionBox();
+		void MoveSelectedTanksToTarget();
+		void DrawAllTanks();
+		void UpdateAllTanks(float deltaTime);
+
 		std::vector<Tank*> tank;
 		std::vector<AiTank*> aitank;
 		Map* mapTiles;
-
 		Collision* col;
 		BulletCollision* bulletCol;
+		Surface* screen;  // Assuming a Screen class for drawing operations
 
-		int2 dragStart;
-		int2 dragEnd;
-
-
+		float deltaTime;
+		float frame_timer;
+		bool mouseDown;
+		bool tanksAwaitingTarget;
+		int mouseX, mouseY;
+		int clickMouseX, clickMouseY;
+		Vector2 dragStart, dragEnd;
+	
 	private:
 		int mouseX, mouseY;
 	};
-} // namespace Tmpl8
+}
+
+#endif // GAME_H

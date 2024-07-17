@@ -2,7 +2,7 @@
 
 namespace Tmpl8 {
 
-	class Collision : public Game
+	class Collision
 	{
 
 	public:

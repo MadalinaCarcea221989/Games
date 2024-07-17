@@ -1,13 +1,13 @@
-#include "Template/precomp.h"
-#include "Tank.h"
-#include "AiTank.h"
-#include "Map.h"
-#include "Collision.h"
-#include "Phaser.h"
-#include "BulletCollision.h"
-#include "BoundingBox.h"
-#include "InputHandler.h"
-#include "TankManager.h"
+#include "../template/precomp.h"
+#include "../player/Tank.h"
+#include "../ai/AiTank.h"
+#include "../map/Map.h"
+#include "../collision/Collision.h"
+#include "../weapons/Phaser.h"
+#include "../collision/BulletCollision.h"
+#include "../utils/BoundingBox.h"
+#include "../utils/InputHandler.h"
+#include "../utils/TankManager.h"
 #include <iostream>
 
 float frame_timer = 0.0f;
@@ -60,7 +60,8 @@ void Game::MouseDown(int button)
 
 void Game::MouseUp(int button)
 {
-    InputHandler::MouseUp(button, mouseX, mouseY, mouseDown, tanksAwaitingTarget, dragEnd, tank, clickMouseX, clickMouseY, col, screen);
+    InputHandler::MouseUp(button, mouseX, mouseY, mouseDown, tanksAwaitingTarget, dragEnd, tank, dragStart, col, screen);
+;
 }
 
 void Game::InitializeTanks()
@@ -103,7 +104,7 @@ void Game::UpdateTanks(float deltaTime)
 
             if (currentTank->GetX() == mouseX && currentTank->GetY() == mouseY)
             {
-                // Logic when tank reaches target
+                currentTank->SetSelected(false);
             }
         }
     }

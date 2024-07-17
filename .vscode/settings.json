@@ -60,5 +60,6 @@
   "files.associations": {
     "*.py": "python",
     "vector": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "enabledIfIncludesResolve"
 }
