@@ -5,47 +5,13 @@
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "compilerPath": "D:\\Programs and apps\\Min-GW\\ucrt64\\bin",
+            "compilerPath": "D:/Programs and apps/Min-GW/ucrt64/bin/gcc.exe",
             "cStandard": "${default}",
             "cppStandard": "${default}",
             "intelliSenseMode": "windows-gcc-x64",
             "compilerArgs": [
                 ""
             ]
-        },
-        {
-            "name": "games",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ]
-        },
-        {
-            "name": "games",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ]
-        },
-        {
-            "name": "games",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

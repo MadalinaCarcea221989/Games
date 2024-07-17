@@ -1,6 +1,5 @@
 #pragma once
 #include <math.h>
-
 namespace Tmpl8 {
 
 	class Vector2
@@ -94,9 +93,5 @@ namespace Tmpl8 {
 			}
 		}
 	};
-
-
-
-
 
 }

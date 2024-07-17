@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Github clone repository/Block D/Games",
-      "program": "d:/Github clone repository/Block D/Games/build/Debug/outDebug",
+      "cwd": "d:/Github clone repository/Games/RTS-2D/src",
+      "program": "d:/Github clone repository/Games/RTS-2D/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

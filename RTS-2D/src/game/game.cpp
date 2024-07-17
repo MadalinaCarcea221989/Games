@@ -1,5 +1,4 @@
-
-#include ".../Template/precomp.h"
+#include "Template/precomp.h"
 #include "Tank.h"
 #include "AiTank.h"
 #include "Map.h"
