@@ -62,7 +62,7 @@
     "vector": "cpp"
   },
   "terminal.integrated.env.windows": {
-    "PATH": "${env:PATH};d:\\Programs and apps\\Min-GW\\ucrt64\\bin"
+    "PATH": "d:/Programs and apps/Min-GW/ucrt64/bin;${env:PATH}"
   },
   "C_Cpp.errorSquiggles": "enabledIfIncludesResolve"
 }

@@ -4,7 +4,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
+            "command": "d:/Programs and apps/Min-GW/ucrt64/bin/g++",
             "args": [
                 "-std=c++17",  // Adjust the C++ standard version as needed
                 "-Wall",
@@ -17,15 +17,19 @@
                 "-Wsign-conversion",
                 "-Wnull-dereference",
                 "-g3",
-                "-00",
+                "-O0",
+                "${file}",
                 "-o",
+                "${workspaceFolder}/build/Debug/${fileBasenameNoExtension}.exe",
                 "-IC:/msys64/mingw64/include",
                 "-LC:/msys64/mingw64/lib",
                 "-lOpenCL",
                 "-lglad",
-                "${fileDirname}\\build\\Debug\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "-lz"
             ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
