@@ -17,10 +17,11 @@
                 "-Wsign-conversion",
                 "-Wnull-dereference",
                 "-g3",
-                "-O0",
+                "-O0",  // No optimization
                 "${file}",
                 "-o",
                 "${workspaceFolder}/build/Debug/${fileBasenameNoExtension}.exe",
+                "-I${workspaceFolder}/template",  // Include template folder
                 "-IC:/msys64/mingw64/include",
                 "-LC:/msys64/mingw64/lib",
                 "-lOpenCL",
