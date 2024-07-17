@@ -1554,6 +1554,6 @@ public:
 	Surface* screen = 0;
 };
 
-#include "game.h"
+#include "../game/game.h"
 
 // EOF

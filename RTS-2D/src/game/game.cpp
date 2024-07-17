@@ -1,4 +1,4 @@
-#include "../../template/precomp.h"
+#include "../templ/precomp.h"
 #include "../player/Tank.h"
 #include "../ai/AiTank.h"
 #include "../map/Map.h"

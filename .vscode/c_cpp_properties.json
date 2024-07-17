@@ -11,7 +11,7 @@
             "intelliSenseMode": "windows-gcc-x64",
             "compilerArgs": [],
             "forcedInclude": [
-                "D:/Github clone repository/Games/RTS-2D/template/precomp.h"
+                "D:/Github clone repository/Games/RTS-2D/templ/precomp.h"
             ]
         }
     ],
