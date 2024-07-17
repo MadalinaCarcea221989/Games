@@ -1555,6 +1555,5 @@ public:
 };
 
 #include "game.h"
-	// application entry poin
 
 // EOF
