@@ -4,16 +4,19 @@
             "name": "windows-gcc-x64",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/Programs and apps/Min-GW/ucrt64/include/**"
+                "D:/Programs and apps/Min-GW/ucrt64/include/**",
+                "${workspaceFolder}/template",
+                "${workspaceFolder}/lib",
+                "${workspaceFolder}/cl"
             ],
             "defines": [],
             "compilerPath": "D:/Programs and apps/Min-GW/ucrt64/bin/g++.exe",
-            "cStandard": "${default}",
-            "cppStandard": "${default}",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64",
             "compilerArgs": [],
             "forcedInclude": [
-                "D:/Github clone repository/Games/RTS-2D/templ/precomp.h"
+                "D:/Github clone repository/Games/RTS-2D/template/precomp.h"
             ]
         }
     ],
