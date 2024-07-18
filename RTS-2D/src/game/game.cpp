@@ -1,4 +1,13 @@
+// Disable warnings/errors for this specific include
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+
 #include "../../template/precomp.h"
+
+// Restore warnings/errors to previous state
+#pragma GCC diagnostic pop
+
+// #include "../../template/precomp.h"
 #include "../player/Tank.h"
 #include "../ai/AiTank.h"
 #include "../map/Map.h"

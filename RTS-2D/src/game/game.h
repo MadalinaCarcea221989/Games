@@ -1,19 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <vector>
-#include "../../template/precomp.h"
-#include "../../lib/stb_image.h"
-#include "../player/Tank.h"
-#include "../ai/AiTank.h"
-#include "../map/Map.h"
-#include "../collision/Collision.h"
-#include "../weapons/Phaser.h"
-#include "../collision/BulletCollision.h"
-#include "../utils/BoundingBox.h"
-#include "../utils/InputHandler.h"
-
-
 namespace Tmpl8 {
 	
 	class Game : public TheApp

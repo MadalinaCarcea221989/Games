@@ -21,9 +21,9 @@
                 "${file}",
                 "-o",
                 "${workspaceFolder}/build/Debug/${fileBasenameNoExtension}.exe",
-                "-I${workspaceFolder}/template",  // Include template folder
-                "-I${workspaceFolder}/lib",  // Include lib folder
-                "-I${workspaceFolder}/cl",  // Include cl folder
+                "-I${workspaceFolder}/RTS-2D/template",  // Include template folder
+                "-I${workspaceFolder}/RTS-2D/lib",  // Include lib folder
+                "-I${workspaceFolder}/RTS-2D/cl",  // Include cl folder
                 "-IC:/msys64/mingw64/include",
                 "-LC:/msys64/mingw64/lib",
                 "-lOpenCL",

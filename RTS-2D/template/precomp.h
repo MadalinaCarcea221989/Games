@@ -34,7 +34,9 @@
 using namespace std;
 
 // windows.h: disable as much as possible to speed up compilation.
+#ifndef NOMINMAX
 #define NOMINMAX
+#endif
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #define VC_EXTRALEAN
@@ -80,7 +82,10 @@ using namespace std;
 
 // OpenCL headers
 #define CL_USE_DEPRECATED_OPENCL_2_0_APIS // safe; see https://stackoverflow.com/a/28500846
-#include "../../cl/cl.h"
+#include "../../lib/OpenCL/inc/CL/cl.h"
+#include "../../lib/OpenCL/inc/CL/cl_gl.h"
+#include "../../lib/OpenCL/inc/CL/cl_gl_ext.h"
+
 #include <cl/cl_gl_ext.h>
 
 // GLFW

@@ -5,9 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "D:/Programs and apps/Min-GW/ucrt64/include/**",
-                "${workspaceFolder}/template",
-                "${workspaceFolder}/lib",
-                "${workspaceFolder}/cl"
+                "${workspaceFolder}/RTS-2D/template",
+                "${workspaceFolder}/RTS-2D/lib",
+                "${workspaceFolder}/RTS-2D/cl"
             ],
             "defines": [],
             "compilerPath": "D:/Programs and apps/Min-GW/ucrt64/bin/g++.exe",
